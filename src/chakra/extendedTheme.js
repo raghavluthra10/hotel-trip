@@ -7,44 +7,43 @@ const theme = extendTheme({
       900: "#63171B",
     },
     black: {
-      700: "RGBA(0, 0, 0, 0.64)",
+      900: "RGBA(0, 0, 0, 0.92)",
     },
     white: "#FFFFFF",
   },
   components: {
     Button: {
-      xl: {
-        small: {
-          h: "56px",
-          fontSize: "lg",
-          px: "32px",
+      sizes: {
+        sm: {
+          p: "0.625rem",
+          fontSize: "0.75rem",
         },
-        // medium
-        // large
+        md: {
+          fontSize: "1rem",
+        },
+        lg: {
+          py: "1rem",
+          px: "1.25rem",
+          fontSize: "1.5rem",
+        },
       },
       variants: {
         "outline-primary": {
           bg: "#FFFFFF",
-          border: "1px solid black.900",
+          boxShadow: "0 0 2px 2px #efdfde",
           variant: "outlined",
         },
         "solid-primary": {
           bg: "red.900",
           color: "#FFFFFF",
-          borderColor: "#FFFFFF",
-          outline: "none",
         },
         "solid-secondary": {
-          bg: "black.700",
+          bg: "black.900",
+          color: "#FFFFFF",
         },
       },
     },
-    // Input: {
-    //   variants: {
-    //     outline: "outline",
-    //     filled: "filled",
-    //   },
-    // },
+    // Input:st
     // Navbar: {},
   },
   styles: {

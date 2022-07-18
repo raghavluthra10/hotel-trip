@@ -1,6 +1,7 @@
-import { Box, Button, useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../Button";
 
 const Header = () => {
   const bg = useColorModeValue("#000000", "##000000");
