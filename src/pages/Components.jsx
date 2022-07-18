@@ -2,7 +2,9 @@
 import React from "react";
 import Flex from "../components/Flex";
 import Button from "../components/Button";
-// import { Button } from "@chakra-ui/react";
+// import { Grid, GridItem } from "@chakra-ui/react";
+import Grid from "../components/Grid";
+import GridItem from "../components/GridItem";
 
 const Components = () => {
   return (
@@ -22,6 +24,26 @@ const Components = () => {
             outline primary
           </Button>
         </Flex>
+
+        <h5>Grid box</h5>
+
+        <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+          <GridItem w="100%" h="100px" bg="#fff000">
+            abc
+          </GridItem>
+
+          <GridItem w="100%" h="100px" bg="#fff000">
+            abc
+          </GridItem>
+
+          <GridItem w="100%" h="100px" bg="#fff000">
+            abc
+          </GridItem>
+
+          <GridItem w="100%" h="100px" bg="#fff000">
+            abc
+          </GridItem>
+        </Grid>
       </div>
     </React.Fragment>
   );
