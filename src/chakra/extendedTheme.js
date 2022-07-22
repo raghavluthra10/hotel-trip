@@ -11,7 +11,9 @@ const theme = extendTheme({
       900: "RGBA(0, 0, 0, 0.92)",
       500: "RGBA(255, 255, 255, 0.36)      ",
     },
-    whiteAlpha: {},
+    gray: {
+      200: "#E2E8F0",
+    },
     white: "#FFFFFF",
   },
   components: {
