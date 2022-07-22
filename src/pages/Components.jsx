@@ -9,6 +9,7 @@ import Input from "../components/Input";
 import Spinner from "../components/Spinner";
 import { useToast } from "@chakra-ui/react";
 import Avatar from "../components/Avatar";
+import Divider from "../components/Divider";
 
 const Components = () => {
   const toast = useToast();
@@ -92,6 +93,11 @@ const Components = () => {
         <br />
         <h3>Avatar</h3>
         <Avatar name="raghv" src="https://bit.ly/dan-abramov" />
+
+        <br />
+        <h3>Divider</h3>
+        <Divider />
+        <br />
       </Flex>
     </React.Fragment>
   );
