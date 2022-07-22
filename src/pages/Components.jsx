@@ -7,8 +7,11 @@ import Grid from "../components/Grid";
 import GridItem from "../components/GridItem";
 import Input from "../components/Input";
 import Spinner from "../components/Spinner";
+import { useToast } from "@chakra-ui/react";
+import Avatar from "../components/Avatar";
 
 const Components = () => {
+  const toast = useToast();
   return (
     <React.Fragment>
       <Flex flexDirection="column">
@@ -67,6 +70,28 @@ const Components = () => {
         <h3>Spinner / Loader</h3>
 
         <Spinner load={true} />
+
+        <br />
+        <h3> Toast </h3>
+        <Button
+          size="lg"
+          onClick={() =>
+            toast({
+              title: "Account created.",
+              description: "We've created your account for you.",
+              status: "error",
+              duration: 9000,
+              isClosable: true,
+            })
+          }
+        >
+          {" "}
+          show toast{" "}
+        </Button>
+
+        <br />
+        <h3>Avatar</h3>
+        <Avatar name="raghv" src="https://bit.ly/dan-abramov" />
       </Flex>
     </React.Fragment>
   );
