@@ -7,8 +7,11 @@ const theme = extendTheme({
       900: "#63171B",
     },
     black: {
+      700: "RGBA(0, 0, 0, 0.64)",
       900: "RGBA(0, 0, 0, 0.92)",
+      500: "RGBA(255, 255, 255, 0.36)      ",
     },
+    whiteAlpha: {},
     white: "#FFFFFF",
   },
   components: {
@@ -43,7 +46,17 @@ const theme = extendTheme({
         },
       },
     },
-    // Input:st
+    // Inputs: {
+    //   // variants: {
+    //   //   primary: {
+    //   //     // variant: "filled",
+    //   //     backgroundColor: "black.900",
+    //   //     focusBorderColor: "black.700",
+    //   //   },
+    //   //   // secondary: {
+    //   //   // }
+    //   // },
+    // },
     // Navbar: {},
   },
   styles: {

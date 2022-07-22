@@ -5,12 +5,14 @@ import Button from "../components/Button";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import Grid from "../components/Grid";
 import GridItem from "../components/GridItem";
+import Input from "../components/Input";
 
 const Components = () => {
   return (
     <React.Fragment>
-      <div>
+      <Flex flexDirection="column">
         <Flex justifyContent="center" alignItems="center">
+          <h3>Buttons</h3>
           <Button variant="solid-secondary">solid secondary</Button>
           <Button variant="outline-primary" size="sm">
             outline primary
@@ -25,7 +27,7 @@ const Components = () => {
           </Button>
         </Flex>
 
-        <h5>Grid box</h5>
+        <h3>Grid box</h3>
 
         <Grid templateColumns="repeat(3, 1fr)" gap={5}>
           <GridItem w="100%" h="100px" bg="#fff000">
@@ -44,7 +46,20 @@ const Components = () => {
             abc
           </GridItem>
         </Grid>
-      </div>
+
+        <br />
+        <h3>Input</h3>
+
+        <Input
+          placeholder="primary: variant => outlined "
+          variant="outline"
+        ></Input>
+
+        <Input
+          placeholder="secondary: variant => filled "
+          variant="filled"
+        ></Input>
+      </Flex>
     </React.Fragment>
   );
 };
