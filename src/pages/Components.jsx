@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import Grid from "../components/Grid";
 import GridItem from "../components/GridItem";
 import Input from "../components/Input";
+import Spinner from "../components/Spinner";
 
 const Components = () => {
   return (
@@ -26,6 +27,7 @@ const Components = () => {
             outline primary
           </Button>
         </Flex>
+        <br />
 
         <h3>Grid box</h3>
 
@@ -59,6 +61,12 @@ const Components = () => {
           placeholder="secondary: variant => filled "
           variant="filled"
         ></Input>
+
+        <br />
+
+        <h3>Spinner / Loader</h3>
+
+        <Spinner load={true} />
       </Flex>
     </React.Fragment>
   );
