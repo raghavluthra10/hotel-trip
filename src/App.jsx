@@ -7,6 +7,9 @@ import Components from "./pages/Components";
 import If from "./components/If";
 import Home from "./pages/Home";
 import React from "react";
+import { Login } from "./pages/Auth";
+import { SignUp } from "./pages/Auth";
+import List from "./pages/List";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/components" element={<Components />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </React.Fragment>
   );

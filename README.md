@@ -1,10 +1,10 @@
 Components to be made:
 
-- navbar
+- Table
 
 pages to be made:
 
-- login
+- loging
 - signup
 - profile
 - all hotel listing page
