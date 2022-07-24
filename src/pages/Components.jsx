@@ -10,6 +10,7 @@ import Spinner from "../components/Spinner";
 import { useToast } from "@chakra-ui/react";
 import Avatar from "../components/Avatar";
 import Divider from "../components/Divider";
+import HotelCard from "../components/HotelCard";
 
 const Components = () => {
   const toast = useToast();
@@ -97,6 +98,17 @@ const Components = () => {
         <br />
         <h3>Divider</h3>
         <Divider />
+        <br />
+        <HotelCard
+          src="https://thumbs.dreamstime.com/b/hotel-lobby-luxury-staircases-fountain-39479289.jpg"
+          title="Hotel Title"
+          address="abc at this street, 122, delhi 1100223"
+          descriptionArray={[
+            "Lorem ipsum dolor sit amet",
+            "Consectetur adipiscing elit",
+            "Integer molestie lorem at massa",
+          ]}
+        />
         <br />
       </Flex>
     </React.Fragment>
