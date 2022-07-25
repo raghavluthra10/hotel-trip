@@ -1,7 +1,7 @@
 import React from "react";
-import Page from "../components/Page";
 import If from "../components/If";
 import HotelCard from "../components/HotelCard";
+import { Box } from "@chakra-ui/react";
 
 const List = () => {
   // fetch the List from API
@@ -94,7 +94,7 @@ const List = () => {
   const fetchMyList = [];
 
   return (
-    <Page px="7rem">
+    <Box className="pageLayout" px="7rem">
       <If condition={fetchedHotelList && fetchedHotelList.length > 0}>
         {fetchedHotelList.map((list, key) => (
           <HotelCard
@@ -119,7 +119,7 @@ const List = () => {
           />
         ))}
       </If>
-    </Page>
+    </Box>
   );
 };
 

@@ -10,6 +10,7 @@ import React from "react";
 import { Login } from "./pages/Auth";
 import { SignUp } from "./pages/Auth";
 import List from "./pages/List";
+import HotelPage from "./pages/HotelPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/list" element={<List />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/hotel/:id" element={<HotelPage />} />
       </Routes>
     </React.Fragment>
   );

@@ -8,9 +8,11 @@ const Flex = ({
   flexGrow,
   alignItems,
   justifyContent,
+  className,
 }) => {
   return (
     <ChakraFlex
+      className={className}
       flexWrap={flexWrap}
       flexDirection={flexDirection}
       flexGrow={flexGrow}

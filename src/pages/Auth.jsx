@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
 import { Box } from "@chakra-ui/react";
-import Page from "../components/Page";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import { Heading } from "@chakra-ui/react";
 import { ViewIcon } from "@chakra-ui/icons";
 import { useToast } from "@chakra-ui/react";
+import Flex from "../components/Flex";
 
 export const Login = () => {
   const toast = useToast();
@@ -47,7 +46,7 @@ export const Login = () => {
   };
 
   return (
-    <Page display="flex" flexDirection="column" alignItems="center">
+    <Flex display="flex" flexDirection="column" alignItems="center">
       <Box
         mt="100px"
         boxShadow="2xl"
@@ -105,7 +104,7 @@ export const Login = () => {
           </Button>
         </form>
       </Box>
-    </Page>
+    </Flex>
   );
 };
 
@@ -127,7 +126,7 @@ export const SignUp = () => {
   };
 
   return (
-    <Page display="flex" flexDirection="column" alignItems="center">
+    <Flex display="flex" flexDirection="column" alignItems="center">
       <Box
         mt="100px"
         boxShadow="2xl"
@@ -206,6 +205,6 @@ export const SignUp = () => {
           </Button>
         </form>
       </Box>
-    </Page>
+    </Flex>
   );
 };

@@ -24,6 +24,7 @@ const Grid = (
       display={props.display}
       justifyContent={props.justifyContent}
       fontWeight={props.fontWeight}
+      className={props.className}
       // bg={bg}
       // borderRadius={borderRadius}
       // p={p}
