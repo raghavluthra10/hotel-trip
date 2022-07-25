@@ -1,14 +1,14 @@
 Components to be made:
 
 - Table
+- hotel list component
 
 pages to be made:
 
-- loging
-- signup
-- profile
 - all hotel listing page
 - my hotel listing page
+- single hotel page
+- profile
 
 style
 -SASS

@@ -27,11 +27,11 @@ const HotelCard = ({ src, title, address, descriptionArray, mb }) => {
       borderRadius="1rem"
       justifyContent="space-between"
       mb={mb}
+      transitionTimingFunction="ease-in-out"
       _hover={{
-        // in: ,
-        // initialScale: "0.2",
         boxShadow: "dark-lg",
       }}
+      // style={_style}
     >
       <Box mr="2rem" minW="fit-content" overflow="hidden" borderRadius="0.5rem">
         <Image src={src} alt="" h="200px" w="250px" fit="cover" />
