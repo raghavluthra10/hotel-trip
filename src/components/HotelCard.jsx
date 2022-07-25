@@ -11,21 +11,27 @@ import React from "react";
 import Button from "./Button";
 import If from "./If";
 
-const HotelCard = ({ src, title, address, descriptionArray }) => {
+const HotelCard = ({ src, title, address, descriptionArray, mb }) => {
   const addToCart = () => {
     console.log("addToCart");
   };
 
   return (
     <Flex
-      maxW="912px"
+      // maxW="1122px"
       minW="712px"
       alignItems="center"
       boxShadow="2xl"
-      //   cursor="pointer"
+      cursor="pointer"
       p="2rem"
       borderRadius="1rem"
       justifyContent="space-between"
+      mb={mb}
+      _hover={{
+        // in: ,
+        // initialScale: "0.2",
+        boxShadow: "dark-lg",
+      }}
     >
       <Box mr="2rem" minW="fit-content" overflow="hidden" borderRadius="0.5rem">
         <Image src={src} alt="" h="200px" w="250px" fit="cover" />
@@ -47,8 +53,8 @@ const HotelCard = ({ src, title, address, descriptionArray }) => {
 
           <If condition={descriptionArray && descriptionArray.length > 0}>
             <UnorderedList>
-              {descriptionArray.map((da) => (
-                <ListItem key={da.key}>{da}</ListItem>
+              {descriptionArray.map((da, key) => (
+                <ListItem key={key}>{da.desc}</ListItem>
               ))}
             </UnorderedList>
           </If>

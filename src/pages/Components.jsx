@@ -104,9 +104,18 @@ const Components = () => {
           title="Hotel Title"
           address="abc at this street, 122, delhi 1100223"
           descriptionArray={[
-            "Lorem ipsum dolor sit amet",
-            "Consectetur adipiscing elit",
-            "Integer molestie lorem at massa",
+            {
+              id: 1,
+              desc: "Lorem ipsum dolor sit amet",
+            },
+            {
+              id: 2,
+              desc: "Consectetur adipiscing elit",
+            },
+            {
+              id: 2,
+              desc: "Integer molestie lorem at massa",
+            },
           ]}
         />
         <br />
