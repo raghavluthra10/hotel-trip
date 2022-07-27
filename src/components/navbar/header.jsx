@@ -46,6 +46,9 @@ const Header = () => {
         <GridItem>
           <Link to="/hotel/:id">Hotel Page</Link>
         </GridItem>
+        <GridItem>
+          <Link to="/newHotel">New hotel</Link>
+        </GridItem>
       </Grid>
 
       <Box display="flex" justifyContent="space-between" alignItems="center">

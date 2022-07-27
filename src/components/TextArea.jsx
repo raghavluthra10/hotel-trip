@@ -1,6 +1,7 @@
+import { Textarea as ChakraTextarea } from "@chakra-ui/react";
 import React from "react";
-import { Input as ChakraInput } from "@chakra-ui/react";
-const Input = ({
+
+const TextArea = ({
   placeholder,
   variant,
   width,
@@ -8,10 +9,11 @@ const Input = ({
   onChange,
   type,
   value,
+  size,
   id,
 }) => {
   return (
-    <ChakraInput
+    <ChakraTextarea
       placeholder={placeholder}
       variant={variant}
       focusBorderColor="black.700"
@@ -20,9 +22,10 @@ const Input = ({
       onChange={onChange}
       type={type}
       value={value}
+      size={size}
       id={id}
     />
   );
 };
 
-export default Input;
+export default TextArea;
